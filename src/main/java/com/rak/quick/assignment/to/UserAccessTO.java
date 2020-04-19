@@ -1,15 +1,5 @@
 package com.rak.quick.assignment.to;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
 public class UserAccessTO {
 	
 	private String empId;
@@ -70,6 +60,12 @@ public class UserAccessTO {
 
 	public void setSubUserCountry(String subUserCountry) {
 		this.subUserCountry = subUserCountry;
+	}
+
+	@Override
+	public String toString() {
+		return "UserAccessTO [empId=" + empId + ", accessKey=" + accessKey + ", country=" + country + ", subUser="
+				+ subUser + ", subUserAccessKey=" + subUserAccessKey + ", subUserCountry=" + subUserCountry + "]";
 	}
 	
 	
